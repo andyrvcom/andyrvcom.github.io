@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QRForge - Modern QR Code Generator</title>
+    <meta
+      name="description"
+      content="Create polished QR codes for websites, text, email, phone, Wi-Fi, and custom content. Export as SVG, PNG, or JPG."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        QRForge
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#generator">Generator</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+      </nav>
+      <a class="button button-dark button-small" href="#generator">Generate</a>
+    </header>
+
+    <main>
+      <section class="trust-strip" aria-label="Benefits">
+        <div>Fast export</div>
+        <div>SVG / PNG / JPG</div>
+        <div>No signup required</div>
+        <div>Works in browser</div>
+      </section>
+
+      <section id="generator" class="section">
+        <div class="section-intro">
+          <p class="eyebrow">Generator</p>
+          <h2>Build the exact QR code you need.</h2>
+          <p>
+            Choose a content type, fine-tune the shape and colors, then export in the format your
+            campaign, print piece, or product surface needs.
+          </p>
+        </div>
+        <div class="generator-shell">
+          <div class="generator" data-generator></div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section section-muted">
+        <div class="section-intro">
+          <p class="eyebrow">How it works</p>
+          <h2>From content to scan-ready asset.</h2>
+          <p>The generator updates live as you type, so you can validate and export without tools.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <span class="step">1</span>
+            <h3>Enter content</h3>
+            <p>Pick a type and enter the URL, message, phone number, email, Wi-Fi details, or custom string.</p>
+          </article>
+          <article class="card">
+            <span class="step">2</span>
+            <h3>Customize</h3>
+            <p>Adjust size, margin, color, dots, and corners using the same styling model as github-qr.</p>
+          </article>
+          <article class="card">
+            <span class="step">3</span>
+            <h3>Export</h3>
+            <p>Download SVG for vector workflows or PNG and JPG for high-resolution sharing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div>
+          <p class="eyebrow">Use cases</p>
+          <h2>Practical by default.</h2>
+        </div>
+        <div class="tile-grid">
+          <div>Websites</div>
+          <div>Menus</div>
+          <div>Events</div>
+          <div>Contact cards</div>
+          <div>Wi-Fi sharing</div>
+          <div>Social profiles</div>
+        </div>
+      </section>
+
+      <section id="features" class="split-section section-muted">
+        <div>
+          <p class="eyebrow">Features</p>
+          <h2>Production-ready exports.</h2>
+        </div>
+        <div class="tile-grid">
+          <div>Instant generation</div>
+          <div>High-quality export</div>
+          <div>Vector support</div>
+          <div>No login</div>
+          <div>Mobile-friendly</div>
+          <div>Styled QR codes</div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="section-intro">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions before you export?</h2>
+          <p>Short answers for practical QR code workflows.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Which formats can I export?</summary>
+            <p>SVG, PNG, and JPG. SVG stays vector-perfect, while PNG and JPG are generated at high resolution.</p>
+          </details>
+          <details>
+            <summary>Can I use it for print?</summary>
+            <p>Yes. Use SVG for design tools or a large PNG/JPG when your print workflow requires raster images.</p>
+          </details>
+          <details>
+            <summary>Is it free to use?</summary>
+            <p>This static page generates codes in the browser. There is no signup flow or server upload.</p>
+          </details>
+          <details>
+            <summary>What can I encode?</summary>
+            <p>Links, plain text, mailto emails, phone calls, Wi-Fi credentials, and any custom string.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <h2>Create your next QR code now.</h2>
+        <p>No account, no upload, no waiting. Generate a scan-ready code directly in the page.</p>
+        <a class="button button-invert" href="#generator">Generate QR Code</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>QRForge. Built with github-qr styling logic.</p>
+      <a href="https://github.com/placeholder">GitHub</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./assets/qr-code-styling.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
